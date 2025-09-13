@@ -1,0 +1,12 @@
+/* Styles personnalisés */
+body {
+  scroll-behavior: smooth; /* smooth scroll */
+}
+
+section {
+  padding: 2rem;
+}
+
+h1, h2 {
+  font-family: 'Audiowide', sans-serif;
+}
