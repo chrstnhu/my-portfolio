@@ -1,17 +1,36 @@
 const skillsSection = document.querySelector('#skills');
 
-// Load Skills content
+// Global variables to be able to replay animations
+let skillSectionElements = [];
+
+// Function called each time we navigate to Skills
+function initSkills() {
+  loadSkills();
+  initPageAnimation(skillSectionElements, {
+    animationOptions: { betweenDelay: 250 }
+  });
+}
+
+// Load Skills content (prepare elements only, no animation here)
 function loadSkills() {
   skillsSection.innerHTML = '';
   skillsSection.classList.add('pt-16');
+  
+  skillSectionElements = [];
+  
   skillSections.forEach(section => {
-    skillsSection.appendChild(createSkillSection(section.title, section.skills));
+    const sectionElement = createSkillSection(section.title, section.skills);
+    skillsSection.appendChild(sectionElement);
+    skillSectionElements.push(sectionElement);
   });
+
+  prepareElementsForAnimation(skillSectionElements, { duration: 800 });
+  startSequentialFadeIn(skillSectionElements, { betweenDelay: 250 });
 }
 
 function createSkillSection(title, skills = []) {
     const section = document.createElement('section');
-    section.classList.add('bg-slate-50', 'rounded-xl', 'shadow-xl', 'p-8', 'mb-10', 'flex', 'flex-col', 'items-start', 'relative', 'transition-all', 'duration-300', 'hover:shadow-2xl', 'hover:-translate-y-1', 'hover:bg-slate-100');
+    section.classList.add('bg-slate-50', 'rounded-xl', 'shadow-xl', 'p-8', 'mb-10', 'mt-10', 'flex', 'flex-col', 'items-start', 'relative', 'transition-all', 'duration-300', 'hover:shadow-2xl', 'hover:-translate-y-1', 'hover:bg-slate-100');
 
     const header = document.createElement('h2');
     header.classList.add('text-2xl', 'font-bold', 'mb-6', 'text-gray-800');
@@ -95,5 +114,5 @@ const skillSections = [
     }
   ];
 
-// Initialize content
+// Initialize content (load once on page load)
 loadSkills();

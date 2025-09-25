@@ -22,12 +22,33 @@ const translations = {
     
     // About page
     aboutTitle: "About Me",
-    aboutIntro: "Hello! I am Christine, a web developer passionate about creating innovative solutions through code.",
-    technicalSkills: "Technical Skills",
-    languages: "Languages: HTML, CSS, JavaScript, TypeScript, C, C++, Python",
-    frameworks: "Frameworks: Tailwind CSS",
-    tools: "Tools: VS Code, Git, GitHub, Docker, VirtualBox",
-    aboutGoal: "My goal is to build clean, efficient, and user-friendly websites and applications that solve real-world problems.",
+    aboutIntroExtended: "Hello! I am Christine, a web developer passionate about creating innovative solutions through code.",
+    hobbies: "Hobbies & Interests",
+    hobbyList: {
+      drawing: "Drawing",
+      traveling: "Traveling",
+      puzzles: "Puzzles",
+      listeningMusic: "Listening to Music",
+      playingGames: "Playing Games"
+    },
+    aboutInternship: "Student at 42 Paris, passionate about web development and modern technologies. Serious, curious and motivated, I am ready to invest myself fully in order to contribute effectively to projects.",
+    personalQualities: "Personal Qualities",
+    qualities: {
+      adaptability: "Adaptability",
+      collaboration: "Collaboration",
+      autonomousLearning: "Autonomous Learning",
+      flexibility: "Flexibility",
+      creativity: "Creativity",
+      openMinded: "Open-minded"
+    },
+    qualityDetails: {
+      adaptability: "Quick adjustment to new environments and technologies",
+      collaboration: "Effective teamwork and communication skills",
+      autonomousLearning: "Self-directed learning and continuous improvement",
+      flexibility: "Ability to handle changing requirements smoothly",
+      creativity: "Innovative problem-solving and original thinking",
+      openMinded: "Receptive to new ideas and diverse perspectives"
+    },
     
     // Skills page
     skillsCategories: {
@@ -97,12 +118,33 @@ const translations = {
     
     // About page
     aboutTitle: "À propos de moi",
-    aboutIntro: "Bonjour ! Je suis Christine, une développeuse web passionnée par la création de solutions innovantes par le code.",
-    technicalSkills: "Compétences techniques",
-    languages: "Langages : HTML, CSS, JavaScript, TypeScript, C, C++, Python",
-    frameworks: "Frameworks : Tailwind CSS",
-    tools: "Outils : VS Code, Git, GitHub, Docker, VirtualBox",
-    aboutGoal: "Mon objectif est de créer des sites web et applications propres, efficaces et conviviaux qui résolvent des problèmes réels.",
+    aboutIntroExtended: "Bonjour ! Je suis Christine, une développeuse web passionnée par la création de solutions innovantes par le code.",
+    hobbies: "Loisirs & Centres d'intérêt",
+    hobbyList: {
+      drawing: "Dessin",
+      traveling: "Voyager",
+      puzzles: "Énigmes",
+      listeningMusic: "Écouter la musique",
+      playingGames: "Jouer aux jeux"
+    },
+    aboutInternship: "Étudiante à 42 Paris, passionnée par le développement web et les technologies modernes. Sérieuse, curieuse et motivée, je suis prête à m'investir pleinement afin de contribuer efficacement aux projets.",
+    personalQualities: "Qualités personnelles",
+    qualities: {
+      adaptability: "Adaptabilité",
+      collaboration: "Collaboration",
+      autonomousLearning: "Apprentissage autonome",
+      flexibility: "Flexibilité",
+      creativity: "Créativité",
+      openMinded: "Esprit ouvert"
+    },
+    qualityDetails: {
+      adaptability: "Adaptation rapide aux nouveaux environnements et technologies",
+      collaboration: "Travail d'équipe efficace et compétences en communication",
+      autonomousLearning: "Apprentissage autodidacte et amélioration continue",
+      flexibility: "Capacité à gérer les changements d'exigences en douceur",
+      creativity: "Résolution créative de problèmes et pensée originale",
+      openMinded: "Réceptif aux nouvelles idées et perspectives diverses"
+    },
     
     // Skills page
     skillsCategories: {
@@ -172,12 +214,33 @@ const translations = {
     
     // About page
     aboutTitle: "关于我",
-    aboutIntro: "你好！我是Christine HU，一名热衷于通过代码创造创新解决方案的网络开发者。",
-    technicalSkills: "技术技能",
-    languages: "编程语言：HTML, CSS, JavaScript, TypeScript, C, C++, Python",
-    frameworks: "框架：Tailwind CSS",
-    tools: "工具：VS Code, Git, GitHub, Docker, VirtualBox",
-    aboutGoal: "我的目标是构建干净、高效、用户友好的网站和应用程序，解决现实世界的问题。",
+    aboutIntroExtended: "你好！我是Christine，一名热衷于通过代码创造创新解决方案的网络开发者。",
+    hobbies: "爱好与兴趣",
+    hobbyList: {
+      drawing: "绘画",
+      traveling: "旅行",
+      puzzles: "益智游戏",
+      listeningMusic: "听音乐",
+      playingGames: "玩游戏"
+    },
+    aboutInternship: "作为42巴黎的学生，我对网络开发和现代技术充满热情。我认真、好奇且积极主动，准备全身心投入，为项目做出有效贡献。",
+    personalQualities: "个人品质",
+    qualities: {
+      adaptability: "适应性",
+      collaboration: "协作能力",
+      autonomousLearning: "自主学习",
+      flexibility: "灵活性",
+      creativity: "创造力",
+      openMinded: "开放思维"
+    },
+    qualityDetails: {
+      adaptability: "快速适应新环境和技术",
+      collaboration: "有效的团队合作和沟通技巧",
+      autonomousLearning: "自主学习和持续改进",
+      flexibility: "能够顺利处理需求变化",
+      creativity: "创新解决问题和原创思维",
+      openMinded: "接受新想法和多元化观点"
+    },
     
     // Skills page
     skillsCategories: {

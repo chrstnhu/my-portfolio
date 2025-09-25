@@ -67,7 +67,18 @@ function createContactGrid() {
   return contactGrid;
 }
 
-// Load Contact content
+// Global variables to be able to replay animations
+let contactBlocks = [];
+
+// Function called each time we navigate to Contact
+function initContact() {
+  loadContact();
+  initPageAnimation(contactBlocks, {
+    animationOptions: { betweenDelay: 200 }
+  });
+}
+
+// Load Contact content with animations
 function loadContact() {
   contactSection.innerHTML = '';
   contactSection.classList.add('pt-16');
@@ -75,9 +86,17 @@ function loadContact() {
   const contactGrid = createContactGrid();
   contactSection.appendChild(contactGrid);
 
-  contactGrid.appendChild(createEmailSection());
-  contactGrid.appendChild(createGitHubSection());
-  contactGrid.appendChild(createLinkedInSection());
+  const emailSection = createEmailSection();
+  const githubSection = createGitHubSection();
+  const linkedinSection = createLinkedInSection();
+
+  contactGrid.appendChild(emailSection);
+  contactGrid.appendChild(githubSection);
+  contactGrid.appendChild(linkedinSection);
+
+  contactBlocks = [emailSection, githubSection, linkedinSection];
+  prepareElementsForAnimation(contactBlocks, { duration: 800 });
+  startSequentialFadeIn(contactBlocks, { betweenDelay: 200 });
 }
 
 // Initialize content

@@ -4,6 +4,30 @@ function showPage(hash) {
   pages.forEach(page => {
     page.style.display = ('#' + page.id === hash) ? 'block' : 'none';
   });
+  
+  // Trigger animations based on displayed page
+  switch(hash) {
+    case '#about':
+      if (typeof initAbout === 'function') {
+        initAbout();
+      }
+      break;
+    case '#projects':
+      if (typeof initProjects === 'function') {
+        initProjects();
+      }
+      break;
+    case '#skills':
+      if (typeof initSkills === 'function') {
+        initSkills();
+      }
+      break;
+    case '#contact':
+      if (typeof initContact === 'function') {
+        initContact();
+      }
+      break;
+  }
 }
 
 showPage(window.location.hash || '#home');

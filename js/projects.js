@@ -82,18 +82,36 @@ function createProjectCard({ title, description, img, link }) {
   return card;
 }
 
-// Load Projects content
+// Global variables to be able to replay animations
+let projectCards = [];
+
+// Function called each time we navigate to Projects
+function initProjects() {
+  loadProjects();
+  initPageAnimation(projectCards, {
+    animationOptions: { betweenDelay: 150 }
+  });
+}
+
+// Load Projects content with animations
 function loadProjects() {
   projectsSection.innerHTML = '';
   projectsSection.classList.add('pt-16');
 
-    const projectsList = document.createElement('div');
-    projectsList.classList.add('grid', 'grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-8', 'mb-8');
-    projectsSection.appendChild(projectsList);
+  const projectsList = document.createElement('div');
+  projectsList.classList.add('grid', 'grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-8', 'mb-8');
+  projectsSection.appendChild(projectsList);
 
-    projects.slice().reverse().forEach(project => {
-      projectsList.appendChild(createProjectCard(project));
-    });
+  projectCards = [];
+  
+  projects.slice().reverse().forEach(project => {
+    const card = createProjectCard(project);
+    projectsList.appendChild(card);
+    projectCards.push(card);
+  });
+
+  prepareElementsForAnimation(projectCards, { duration: 700 });
+  startSequentialFadeIn(projectCards, { betweenDelay: 150 });
 }
 
 const projects = [
@@ -187,5 +205,6 @@ const projects = [
         link: 'https://github.com/chrstnhu/ft_transcendence'
       }
     ];
-  
+
+// Initialize content
 loadProjects();
