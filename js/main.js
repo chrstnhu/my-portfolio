@@ -22,7 +22,7 @@ window.addEventListener('popstate', () => {
   showPage(window.location.hash || '#home');
 });
 
-// Clique sur le logo ramène à la home
+// Handle logo click to go home
 const logoLink = document.getElementById('logo-link');
 if (logoLink) {
   logoLink.addEventListener('click', e => {
@@ -30,4 +30,71 @@ if (logoLink) {
     history.pushState(null, '', '#home');
     showPage('#home');
   });
+}
+
+// Handle language selector
+document.addEventListener('DOMContentLoaded', () => {
+  const languageSelector = document.getElementById('language-selector');
+  if (languageSelector) {
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    languageSelector.value = savedLanguage;
+    
+    languageSelector.addEventListener('change', (e) => {
+      const selectedLanguage = e.target.value;
+      if (typeof changeLanguage === 'function') {
+        changeLanguage(selectedLanguage);
+        reloadAllPages();
+      }
+    });
+  }
+});
+
+// Reload all pages content
+function reloadAllPages() {
+  const activePage = document.querySelector('.page:not([style*="display: none"])');
+  const activePageId = activePage ? activePage.id : 'home';
+  
+  document.getElementById('home').innerHTML = '';
+  document.getElementById('about').innerHTML = '';
+  document.getElementById('projects').innerHTML = '';
+  document.getElementById('skills').innerHTML = '';
+  document.getElementById('contact').innerHTML = '';
+  
+  loadHomeContent();
+  loadAboutContent();
+  loadProjectsContent();
+  loadSkillsContent();
+  loadContactContent();
+  showPage('#' + activePageId);
+}
+
+// Load each section content if the function exists
+function loadHomeContent() {
+  if (typeof loadHome === 'function') {
+    loadHome();
+  }
+}
+
+function loadAboutContent() {
+  if (typeof loadAbout === 'function') {
+    loadAbout();
+  }
+}
+
+function loadProjectsContent() {
+  if (typeof loadProjects === 'function') {
+    loadProjects();
+  }
+}
+
+function loadSkillsContent() {
+  if (typeof loadSkills === 'function') {
+    loadSkills();
+  }
+}
+
+function loadContactContent() {
+  if (typeof loadContact === 'function') {
+    loadContact();
+  }
 }

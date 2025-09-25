@@ -1,72 +1,105 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio SPA</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/main.js"></script>
-  <script defer src="js/home.js"></script>
-  <script defer src="js/about.js"></script>
-  <script defer src="js/projects.js"></script>
-  <script defer src="js/skills.js"></script>
-  <script defer src="js/contact.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
 
-</head>
-<body>
-  <header class="header flex justify-between">
-  <a href="#home" class="logo" id="logo-link" style="cursor:pointer;">My Portfolio</a>
-    <nav class="nav">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </header>
+    <script defer src="js/translations.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/home.js"></script>
+    <script defer src="js/about.js"></script>
+    <script defer src="js/projects.js"></script>
+    <script defer src="js/skills.js"></script>
+    <script defer src="js/contact.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="flex justify-between fixed top-0 left-0 w-full z-50 bg-gray-800 text-white p-4"
+      id="main-header">
+      <a href="#home" class="text-white transition-colors duration-200 hover:text-gray-300 no-underline"
+        id="logo-link" style="cursor: pointer">
+        My Portfolio</a>
+      <nav class="flex items-center space-x-8">
+        <a href="#home" class="text-white transition-colors duration-200 hover:text-gray-300 no-underline">
+          Home
+        </a>
+        <a href="#about" class="text-white transition-colors duration-200 hover:text-gray-300 no-underline">
+          About
+        </a>
+        <a href="#projects" class="text-white transition-colors duration-200 hover:text-gray-300 no-underline">
+          Projects
+        </a>
+        <a href="#skills" class="text-white transition-colors duration-200 hover:text-gray-300 no-underline">
+          Skills
+        </a>
+        <a href="#contact" class="text-white transition-colors duration-200 hover:text-gray-300 no-underline">
+          Contact
+        </a>
+        
+        <!-- Language Selector -->
+        <div class="relative ml-4">
+          <select id="language-selector" class="bg-gray-700 text-white border border-gray-600 rounded px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200 hover:bg-gray-600">
+            <option value="en">🇺🇸 EN</option>
+            <option value="fr">🇫🇷 FR</option>
+            <option value="zh">🇨🇳 中文</option>
+          </select>
+        </div>
+      </nav>
+    </header>
 
-  <main>
-    <section id="home" class="page"> 
-    </section>
+    <main>
+      <section id="home" class="page"></section>
+      <section id="about" class="page" style="display: none"></section>
+      <section id="projects" class="page" style="display: none"></section>
+      <section id="skills" class="page" style="display: none"></section>
+      <section id="contact" class="page" style="display: none"></section>
+    </main>
 
-    <section id="about" class="page" style="display:none;">
-    </section>
-
-    <section id="projects" class="page" style="display:none;">
-    </section>
-
-    <section id="skills" class="page" style="display:none;">
-    </section>
-
-    <section id="contact" class="page" style="display:none;">
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="flex justify-between">
-      <div>
-        <p>42Project Portfolio</p>
-        <p>Showcasing technical expertise and projects from School 42 with clean, professional presentation.</p>
+    <footer class="bg-gray-800 text-white p-4">
+      <div class="flex justify-between">
+        <div>
+          <p>42Project Portfolio</p>
+          <p>
+            Showcasing technical expertise and projects from School 42 with
+            presentation.
+          </p>
+        </div>
+        <div class="flex flex-row gap-6">
+          <nav class="flex flex-col">
+            <a class="text-xl font-bold">Navigate</a>
+            <a href="#home" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              Home
+            </a>
+            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              About
+            </a>
+            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              Projects
+            </a>
+            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              Skills
+            </a>
+            <a href="#contact" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              Contact
+            </a>
+          </nav>
+          <nav class="flex flex-col">
+            <a class="text-xl font-bold">Connect</a>
+            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              GitHub
+            </a>
+            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              Mail
+            </a>
+            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">
+              LinkedIn
+            </a>
+          </nav>
+        </div>
       </div>
-      <div class="flex flex-row gap-6">
-        <nav class="flex flex-col">
-          <a class="text-xl font-bold">Navigate</a>
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        <nav class="flex flex-col ">
-          <a class="text-xl font-bold">Connect</a>
-          <a href="#about" class="nav-link">GitHub</a>
-          <a href="#projects" class="nav-link">Mail</a>
-          <a href="#skills" class="nav-link">LinkedIn</a>
-        </nav>
-      </div>
-    </div>
-    <p class="mt-8">© 2025 My Portfolio. All rights reserved.</p>
-  </footer>
-</body>
+      <p class="mt-8">© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
