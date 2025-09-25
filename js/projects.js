@@ -71,9 +71,10 @@ function createContentSection(title, description, link) {
 }
 
 // Main function to create a complete project card
-function createProjectCard({ title, description, img, link }) {
+function createProjectCard({ title, descriptionKey, img, link }) {
   const card = createCardContainer();
   const imageSection = createImageSection(img, title);
+  const description = t(descriptionKey); // Translate dynamically
   const contentSection = createContentSection(title, description, link);
   
   card.appendChild(imageSection);
@@ -104,7 +105,7 @@ function loadProjects() {
 
   projectCards = [];
   
-  projects.slice().reverse().forEach(project => {
+  projectsData.slice().reverse().forEach(project => {
     const card = createProjectCard(project);
     projectsList.appendChild(card);
     projectCards.push(card);
@@ -114,93 +115,93 @@ function loadProjects() {
   startSequentialFadeIn(projectCards, { betweenDelay: 150 });
 }
 
-const projects = [
+const projectsData = [
       {
         title: 'libft',
-        description: t('projectDescriptions.libft'),
+        descriptionKey: 'projectDescriptions.libft',
         img: 'assets/projects/libft.jpg',
         link: 'https://github.com/chrstnhu/libft_library'
       },
       {
         title: 'get-next-line',
-        description: t('projectDescriptions.getNextLine'),
+        descriptionKey: 'projectDescriptions.getNextLine',
         img: 'assets/projects/get-next-line.png',
         link: 'https://github.com/chrstnhu/get-next-line'
       },
       {
         title: 'ft_printf',
-        description: t('projectDescriptions.ftPrintf'),
+        descriptionKey: 'projectDescriptions.ftPrintf',
         img: 'assets/projects/ft_printf.png',
         link: 'https://github.com/chrstnhu/ft_printf'
       },
       {
         title: 'Born2beroot',
-        description: t('projectDescriptions.born2beroot'),
+        descriptionKey: 'projectDescriptions.born2beroot',
         img: 'assets/projects/VirtualBox.png'
       },
       {
         title: 'push_swap',
-        description: t('projectDescriptions.pushSwap'),
+        descriptionKey: 'projectDescriptions.pushSwap',
         img: 'assets/projects/push_swap.png',
         link: 'https://github.com/chrstnhu/push_swap'
       },
       {
         title: 'so_long',
-        description: t('projectDescriptions.soLong'),
+        descriptionKey: 'projectDescriptions.soLong',
         img: 'assets/projects/so_long.png',
         link: 'https://github.com/chrstnhu/so_long'
       },
       {
         title: 'pipex',
-        description: t('projectDescriptions.pipex'),
+        descriptionKey: 'projectDescriptions.pipex',
         img: 'assets/projects/Pipex.png',
         link: 'https://github.com/chrstnhu/pipex'
       },
       {
         title: 'philosophers',
-        description: t('projectDescriptions.philosophers'),
+        descriptionKey: 'projectDescriptions.philosophers',
         img: 'assets/projects/philosophers.png',
         link: 'https://github.com/chrstnhu/philosophers'
       },
       {
         title: 'minishell',
-        description: t('projectDescriptions.minishell'),
+        descriptionKey: 'projectDescriptions.minishell',
         img: 'assets/projects/minishell.png',
         link: 'https://github.com/chrstnhu/minishell'
       },
       {
         title: 'NetPractice',
-        description: t('projectDescriptions.netPractice'),
+        descriptionKey: 'projectDescriptions.netPractice',
         img: 'assets/projects/NetPractice.png',
         link: 'https://github.com/chrstnhu/net-practice'
       },
       {
         title: 'cub3d',
-        description: t('projectDescriptions.cub3d'),
+        descriptionKey: 'projectDescriptions.cub3d',
         img: 'assets/projects/cub3D.png',
         link: 'https://github.com/chrstnhu/cub3d'
       },
       {
         title: 'CPP Modules',
-        description: t('projectDescriptions.cppModules'),
+        descriptionKey: 'projectDescriptions.cppModules',
         img: 'assets/projects/C++.png',
         link: 'https://github.com/chrstnhu/CPP-Module'
       },
       {
         title: 'inception',
-        description: t('projectDescriptions.inception'),
+        descriptionKey: 'projectDescriptions.inception',
         img: 'assets/projects/Docker.png',
         link: 'https://github.com/chrstnhu/inception'
       },
       {
         title: 'ft_irc',
-        description: t('projectDescriptions.ftIrc'),
+        descriptionKey: 'projectDescriptions.ftIrc',
         img: 'assets/projects/ft_irc.png',
         link: 'https://github.com/chrstnhu/ft_irc'
       },
       {
         title: 'ft_transcendence',
-        description: t('projectDescriptions.ftTranscendence'),
+        descriptionKey: 'projectDescriptions.ftTranscendence',
         img: 'assets/projects/ft_transcendence.png',
         link: 'https://github.com/chrstnhu/ft_transcendence'
       }
