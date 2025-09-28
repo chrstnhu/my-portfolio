@@ -17,12 +17,12 @@ const translations = {
     projectsBtn: "Projects",
     contactBtn: "Contact",
     skillsPreview: "HTML, CSS, JS, TypeScript, Tailwind, VS Code, GitHub...",
-    projectsPreview: "Discover my latest web projects and applications.",
+    projectsPreview: "Discover my latest projects and applications.",
     contactPreview: "Get in touch for collaborations or questions.",
     
     // About page
     aboutTitle: "About Me",
-    aboutIntroExtended: "Hello! I am Christine, a web developer passionate about creating innovative solutions through code.",
+    aboutIntroExtended: "Hello! I am Christine, a developer passionate about creating innovative solutions through code.",
     hobbies: "Hobbies & Interests",
     hobbyList: {
       drawing: "Drawing",
@@ -31,7 +31,7 @@ const translations = {
       listeningMusic: "Listening to Music",
       playingGames: "Playing Games"
     },
-    aboutInternship: "Student at 42 Paris, passionate about web development and modern technologies. Serious, curious and motivated, I am ready to invest myself fully in order to contribute effectively to projects.",
+    aboutInternship: "Student at 42 Paris, passionate about development and modern technologies. Serious, curious and motivated, I am ready to invest myself fully in order to contribute effectively to projects.",
     personalQualities: "Personal Qualities",
     qualities: {
       adaptability: "Adaptability",
@@ -76,7 +76,7 @@ const translations = {
       cppModules: "Introduction to object-oriented programming in C++.",
       inception: "Virtualization project with Docker and web services.",
       ftIrc: "IRC server in C++ compatible with standard IRC clients.",
-      ftTranscendence: "Complete web application - real-time multiplayer Pong game."
+      ftTranscendence: "Complete web application - real-time multiplayers Pong game."
     },
     
     // Contact page
@@ -113,21 +113,21 @@ const translations = {
     projectsBtn: "Projets",
     contactBtn: "Contact",
     skillsPreview: "HTML, CSS, JS, TypeScript, Tailwind, VS Code, GitHub...",
-    projectsPreview: "Découvrez mes derniers projets web et applications.",
+    projectsPreview: "Découvrez mes derniers projets et applications.",
     contactPreview: "Contactez-moi pour des collaborations ou questions.",
     
     // About page
     aboutTitle: "À propos de moi",
-    aboutIntroExtended: "Bonjour ! Je suis Christine, une développeuse web passionnée par la création de solutions innovantes par le code.",
+    aboutIntroExtended: "Bonjour ! Je suis Christine, une développeuse passionnée par la création de solutions innovantes par le code.",
     hobbies: "Loisirs & Centres d'intérêt",
     hobbyList: {
-      drawing: "Dessin",
+      drawing: "Dessiner",
       traveling: "Voyager",
-      puzzles: "Énigmes",
+      puzzles: "Résoudre des énigmes",
       listeningMusic: "Écouter la musique",
       playingGames: "Jouer aux jeux"
     },
-    aboutInternship: "Étudiante à 42 Paris, passionnée par le développement web et les technologies modernes. Sérieuse, curieuse et motivée, je suis prête à m'investir pleinement afin de contribuer efficacement aux projets.",
+    aboutInternship: "Étudiante à 42 Paris, passionnée par le développement et les technologies modernes. Sérieuse, curieuse et motivée, je suis prête à m'investir pleinement afin de contribuer efficacement aux projets.",
     personalQualities: "Qualités personnelles",
     qualities: {
       adaptability: "Adaptabilité",
@@ -139,11 +139,11 @@ const translations = {
     },
     qualityDetails: {
       adaptability: "Adaptation rapide aux nouveaux environnements et technologies",
-      collaboration: "Travail d'équipe efficace et compétences en communication",
+      collaboration: "Travail d'équipe efficace",
       autonomousLearning: "Apprentissage autodidacte et amélioration continue",
-      flexibility: "Capacité à gérer les changements d'exigences en douceur",
-      creativity: "Résolution créative de problèmes et pensée originale",
-      openMinded: "Réceptif aux nouvelles idées et perspectives diverses"
+      flexibility: "Capacité à gérer les changements",
+      creativity: "Résolution créative de problèmes",
+      openMinded: "Réceptive aux nouvelles idées"
     },
     
     // Skills page
@@ -172,7 +172,7 @@ const translations = {
       cppModules: "Introduction à la programmation orientée objet en C++.",
       inception: "Projet de virtualisation avec Docker et services web.",
       ftIrc: "Serveur IRC en C++ compatible avec les clients IRC standard.",
-      ftTranscendence: "Application web complète - jeu Pong multijoueur en temps réel."
+      ftTranscendence: "Application web complète - jeu Pong multijoueurs en temps réel."
     },
     
     // Contact page
@@ -203,18 +203,18 @@ const translations = {
     // Home page
     welcome: "欢迎来到我的作品集！",
     name: "Christine HU",
-    tagline: "热衷于通过代码创造创新解决方案的开发者",
+    tagline: "热衷于通过代码创造和创新解决方案的开发者",
     aboutBtn: "关于",
     skillsBtn: "技能",
     projectsBtn: "项目",
     contactBtn: "联系",
     skillsPreview: "HTML, CSS, JS, TypeScript, Tailwind, VS Code, GitHub...",
-    projectsPreview: "探索我最新的网络项目和应用程序。",
-    contactPreview: "联系我进行合作或咨询。",
+    projectsPreview: "探索我最新的网络相关项目和应用程序。",
+    contactPreview: "合作或咨询",
     
     // About page
     aboutTitle: "关于我",
-    aboutIntroExtended: "你好！我是Christine，一名热衷于通过代码创造创新解决方案的网络开发者。",
+    aboutIntroExtended: "你好！我是Christine，一名热衷于通过代码创造和创新解决方案的开发者。",
     hobbies: "爱好与兴趣",
     hobbyList: {
       drawing: "绘画",
@@ -223,20 +223,20 @@ const translations = {
       listeningMusic: "听音乐",
       playingGames: "玩游戏"
     },
-    aboutInternship: "作为42巴黎的学生，我对网络开发和现代技术充满热情。我认真、好奇且积极主动，准备全身心投入，为项目做出有效贡献。",
-    personalQualities: "个人品质",
+    aboutInternship: "作为ECOLE 42的学生，我对网络开发和现代技术充满热情。我认真、好奇且积极主动，为项目做出有效贡献。",
+    personalQualities: "优点",
     qualities: {
-      adaptability: "适应性",
+      adaptability: "适应力强",
       collaboration: "协作能力",
       autonomousLearning: "自主学习",
-      flexibility: "灵活性",
+      flexibility: "灵活",
       creativity: "创造力",
       openMinded: "开放思维"
     },
     qualityDetails: {
       adaptability: "快速适应新环境和技术",
       collaboration: "有效的团队合作和沟通技巧",
-      autonomousLearning: "自主学习和持续改进",
+      autonomousLearning: "自主学习和持续进步",
       flexibility: "能够顺利处理需求变化",
       creativity: "创新解决问题和原创思维",
       openMinded: "接受新想法和多元化观点"
@@ -261,14 +261,14 @@ const translations = {
       pushSwap: "使用两个堆栈和一组指令的排序算法。",
       soLong: "使用minilibx开发的小型2D游戏。",
       pipex: "重建带重定向的shell管道机制。",
-      philosophers: "使用线程和互斥锁模拟哲学家问题。",
+      philosophers: "使用线程和互斥锁模拟哲学家就餐问题。",
       minishell: "重建像bash一样的基本shell。",
       netPractice: "网络配置和TCP/IP实践练习。",
       cub3d: "受Wolfenstein 3D启发的3D游戏引擎，使用光线投射。",
       cppModules: "C++面向对象编程入门。",
       inception: "使用Docker和网络服务的虚拟化项目。",
       ftIrc: "与标准IRC客户端兼容的C++ IRC服务器。",
-      ftTranscendence: "完整的网络应用程序 - 实时多人Pong游戏。"
+      ftTranscendence: "完整的网络应用程序 - 实时多人玩家Pong游戏。"
     },
     
     // Contact page
@@ -279,8 +279,8 @@ const translations = {
     
     // Footer
     footerTitle: "42项目作品集",
-    footerDescription: "展示来自42学校的技术专长和项目。",
-    navigate: "导航",
+    footerDescription: "展示42学校的技术专长和项目。",
+    navigate: "目录",
     connect: "连接",
     github: "GitHub",
     mail: "邮件",
