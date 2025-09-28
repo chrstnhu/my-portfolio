@@ -18,8 +18,9 @@ function loadSkills() {
   
   skillSectionElements = [];
   
-  skillSections.forEach(section => {
-    const sectionElement = createSkillSection(section.title, section.skills);
+  skillSectionsData.forEach(section => {
+    const title = t(section.titleKey); // Translate dynamically
+    const sectionElement = createSkillSection(title, section.skills);
     skillsSection.appendChild(sectionElement);
     skillSectionElements.push(sectionElement);
   });
@@ -65,9 +66,9 @@ function createSkillSection(title, skills = []) {
   }
 
   
-const skillSections = [
+const skillSectionsData = [
     {
-      title: t('skillsCategories.languages'),
+      titleKey: 'skillsCategories.languages',
       skills: [
         { name: 'C', img: 'assets/skills/C.png' },
         { name: 'C++', img: 'assets/skills/C++.png' },
@@ -79,13 +80,13 @@ const skillSections = [
       ]
     },
     {
-      title: t('skillsCategories.frameworks'),
+      titleKey: 'skillsCategories.frameworks',
       skills: [
         { name: 'Tailwind CSS', img: 'assets/skills/Tailwind CSS.png' }
       ]
     },
     {
-      title: t('skillsCategories.environments'),
+      titleKey: 'skillsCategories.environments',
       skills: [
         { name: 'Linux', img: 'assets/skills/Linux.png' },
         { name: 'Docker', img: 'assets/skills/Docker.png' },
@@ -93,7 +94,7 @@ const skillSections = [
       ]
     },
     {
-      title: t('skillsCategories.editors'),
+      titleKey: 'skillsCategories.editors',
       skills: [
         { name: 'VS Code', img: 'assets/skills/Visual Studio Code (VS Code).png' },
         { name: 'nano', img: 'assets/skills/Nano.png' },
@@ -104,7 +105,7 @@ const skillSections = [
       ]
     },
     {
-      title: t('skillsCategories.utilities'),
+      titleKey: 'skillsCategories.utilities',
       skills: [
         { name: 'GIMP', img: 'assets/skills/GIMP.png' },
         { name: 'Audacity', img: 'assets/skills/Audacity.png' },
