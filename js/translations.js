@@ -7,7 +7,7 @@ const translations = {
     projects: "Projects",
     skills: "Skills",
     contact: "Contact",
-    
+
     // Home page
     welcome: "Welcome to my portfolio!",
     name: "Christine HU",
@@ -19,19 +19,21 @@ const translations = {
     skillsPreview: "HTML, CSS, JS, TypeScript, Tailwind, VS Code, GitHub...",
     projectsPreview: "Discover my latest projects and applications.",
     contactPreview: "Get in touch for collaborations or questions.",
-    
+
     // About page
     aboutTitle: "About Me",
-    aboutIntroExtended: "Hello! I am Christine, a developer passionate about creating innovative solutions through code.",
+    aboutIntroExtended:
+      "Hello! I am Christine, a developer passionate about creating innovative solutions through code.",
     hobbies: "Hobbies & Interests",
     hobbyList: {
       drawing: "Drawing",
       traveling: "Traveling",
       puzzles: "Puzzles",
       listeningMusic: "Listening to Music",
-      playingGames: "Playing Games"
+      playingGames: "Playing Games",
     },
-    aboutInternship: "Student at 42 Paris, passionate about development and modern technologies. Serious, curious and motivated, I am ready to invest myself fully in order to contribute effectively to projects.",
+    aboutInternship:
+      "Student at 42 Paris, passionate about development and modern technologies. Serious, curious and motivated, I am ready to invest myself fully in order to contribute effectively to projects.",
     personalQualities: "Personal Qualities",
     qualities: {
       adaptability: "Adaptability",
@@ -39,7 +41,7 @@ const translations = {
       autonomousLearning: "Autonomous Learning",
       flexibility: "Flexibility",
       creativity: "Creativity",
-      openMinded: "Open-minded"
+      openMinded: "Open-minded",
     },
     qualityDetails: {
       adaptability: "Quick adjustment to new environments and technologies",
@@ -47,18 +49,18 @@ const translations = {
       autonomousLearning: "Self-directed learning and continuous improvement",
       flexibility: "Ability to handle changing requirements smoothly",
       creativity: "Innovative problem-solving and original thinking",
-      openMinded: "Receptive to new ideas and diverse perspectives"
+      openMinded: "Receptive to new ideas and diverse perspectives",
     },
-    
+
     // Skills page
     skillsCategories: {
       languages: "Languages",
       frameworks: "Frameworks & Libraries",
       environments: "Environments & Systems",
       editors: "Editors & IDE & Version Control",
-      utilities: "Utilities"
+      utilities: "Utilities",
     },
-    
+
     // Projects page
     viewDetails: "View Details",
     projectDescriptions: {
@@ -69,33 +71,38 @@ const translations = {
       pushSwap: "Sorting algorithm with two stacks and a set of instructions.",
       soLong: "Small 2D game developed with minilibx.",
       pipex: "Recreation of shell pipe mechanism with redirection.",
-      philosophers: "Simulation of the philosophers problem with threads and mutex.",
+      philosophers:
+        "Simulation of the philosophers problem with threads and mutex.",
       minishell: "Recreation of a basic shell like bash.",
       netPractice: "Practical network configuration and TCP/IP exercises.",
       cub3d: "3D game engine inspired by Wolfenstein 3D with raycasting.",
       cppModules: "Introduction to object-oriented programming in C++.",
       inception: "Virtualization project with Docker and web services.",
       ftIrc: "IRC server in C++ compatible with standard IRC clients.",
-      ftTranscendence: "Complete web application - real-time multiplayers Pong game."
+      ftTranscendence:
+        "Complete web application - real-time multiplayers Pong game.",
+      camagru:
+        "A simple social media web application with photo sharing and filters.",
     },
-    
+
     // Contact page
     showEmail: "Show my email",
     hideEmail: "Hide email",
     viewGithub: "View my GitHub",
     viewLinkedin: "View my LinkedIn",
-    
+
     // Footer
     footerTitle: "42Project Portfolio",
-    footerDescription: "Showcasing technical expertise and projects from School 42 with presentation.",
+    footerDescription:
+      "Showcasing technical expertise and projects from School 42 with presentation.",
     navigate: "Navigate",
     connect: "Connect",
     github: "GitHub",
     mail: "Mail",
     linkedin: "LinkedIn",
-    copyright: "© 2025 My Portfolio. All rights reserved."
+    copyright: "© 2025 My Portfolio. All rights reserved.",
   },
-  
+
   fr: {
     // Navigation
     home: "Accueil",
@@ -103,11 +110,12 @@ const translations = {
     projects: "Projets",
     skills: "Compétences",
     contact: "Contact",
-    
+
     // Home page
     welcome: "Bienvenue sur mon portfolio !",
     name: "Christine HU",
-    tagline: "Développeuse passionnée créant des solutions innovantes par le code",
+    tagline:
+      "Développeuse passionnée créant des solutions innovantes par le code",
     aboutBtn: "À propos",
     skillsBtn: "Compétences",
     projectsBtn: "Projets",
@@ -115,19 +123,21 @@ const translations = {
     skillsPreview: "HTML, CSS, JS, TypeScript, Tailwind, VS Code, GitHub...",
     projectsPreview: "Découvrez mes derniers projets et applications.",
     contactPreview: "Contactez-moi pour des collaborations ou questions.",
-    
+
     // About page
     aboutTitle: "À propos de moi",
-    aboutIntroExtended: "Bonjour ! Je suis Christine, une développeuse passionnée par la création de solutions innovantes par le code.",
+    aboutIntroExtended:
+      "Bonjour ! Je suis Christine, une développeuse passionnée par la création de solutions innovantes par le code.",
     hobbies: "Loisirs & Centres d'intérêt",
     hobbyList: {
       drawing: "Dessiner",
       traveling: "Voyager",
       puzzles: "Résoudre des énigmes",
       listeningMusic: "Écouter la musique",
-      playingGames: "Jouer aux jeux"
+      playingGames: "Jouer aux jeux",
     },
-    aboutInternship: "Étudiante à 42 Paris, passionnée par le développement et les technologies modernes. Sérieuse, curieuse et motivée, je suis prête à m'investir pleinement afin de contribuer efficacement aux projets.",
+    aboutInternship:
+      "Étudiante à 42 Paris, passionnée par le développement et les technologies modernes. Sérieuse, curieuse et motivée, je suis prête à m'investir pleinement afin de contribuer efficacement aux projets.",
     personalQualities: "Qualités personnelles",
     qualities: {
       adaptability: "Adaptabilité",
@@ -135,63 +145,71 @@ const translations = {
       autonomousLearning: "Apprentissage autonome",
       flexibility: "Flexibilité",
       creativity: "Créativité",
-      openMinded: "Esprit ouvert"
+      openMinded: "Esprit ouvert",
     },
     qualityDetails: {
-      adaptability: "Adaptation rapide aux nouveaux environnements et technologies",
+      adaptability:
+        "Adaptation rapide aux nouveaux environnements et technologies",
       collaboration: "Travail d'équipe efficace",
       autonomousLearning: "Apprentissage autodidacte et amélioration continue",
       flexibility: "Capacité à gérer les changements",
       creativity: "Résolution créative de problèmes",
-      openMinded: "Réceptive aux nouvelles idées"
+      openMinded: "Réceptive aux nouvelles idées",
     },
-    
+
     // Skills page
     skillsCategories: {
       languages: "Langages",
       frameworks: "Frameworks et Bibliothèques",
       environments: "Environnements et Systèmes",
       editors: "Éditeurs et IDE et Contrôle de Version",
-      utilities: "Utilitaires"
+      utilities: "Utilitaires",
     },
-    
+
     // Projects page
     viewDetails: "Voir les détails",
     projectDescriptions: {
       libft: "Ma première bibliothèque C - recréation des fonctions libc.",
-      getNextLine: "Fonction qui lit ligne par ligne depuis un descripteur de fichier.",
+      getNextLine:
+        "Fonction qui lit ligne par ligne depuis un descripteur de fichier.",
       ftPrintf: "Recréation de la fonction printf de libc.",
       born2beroot: "Projet d'administration système avec machine virtuelle.",
-      pushSwap: "Algorithme de tri avec deux piles et un ensemble d'instructions.",
+      pushSwap:
+        "Algorithme de tri avec deux piles et un ensemble d'instructions.",
       soLong: "Petit jeu 2D développé avec minilibx.",
       pipex: "Recréation du mécanisme de pipe shell avec redirection.",
-      philosophers: "Simulation du problème des philosophes avec threads et mutex.",
+      philosophers:
+        "Simulation du problème des philosophes avec threads et mutex.",
       minishell: "Recréation d'un shell basique comme bash.",
       netPractice: "Exercices pratiques de configuration réseau et TCP/IP.",
       cub3d: "Moteur de jeu 3D inspiré de Wolfenstein 3D avec raycasting.",
       cppModules: "Introduction à la programmation orientée objet en C++.",
       inception: "Projet de virtualisation avec Docker et services web.",
       ftIrc: "Serveur IRC en C++ compatible avec les clients IRC standard.",
-      ftTranscendence: "Application web complète - jeu Pong multijoueurs en temps réel."
+      ftTranscendence:
+        "Application web complète - jeu Pong multijoueurs en temps réel.",
+      camagru:
+        "Une application web simple de médias sociaux avec partage de photos et filtres.",
     },
-    
+
     // Contact page
     showEmail: "Afficher mon email",
     hideEmail: "Masquer l'email",
     viewGithub: "Voir mon GitHub",
     viewLinkedin: "Voir mon LinkedIn",
-    
+
     // Footer
     footerTitle: "Portfolio Projets 42",
-    footerDescription: "Présentation de l'expertise technique et des projets de l'École 42.",
+    footerDescription:
+      "Présentation de l'expertise technique et des projets de l'École 42.",
     navigate: "Naviguer",
     connect: "Se connecter",
     github: "GitHub",
     mail: "Mail",
     linkedin: "LinkedIn",
-    copyright: "© 2025 Mon Portfolio. Tous droits réservés."
+    copyright: "© 2025 Mon Portfolio. Tous droits réservés.",
   },
-  
+
   zh: {
     // Navigation
     home: "首页",
@@ -199,7 +217,7 @@ const translations = {
     projects: "项目",
     skills: "技能",
     contact: "联系",
-    
+
     // Home page
     welcome: "欢迎来到我的作品集！",
     name: "Christine HU",
@@ -211,19 +229,21 @@ const translations = {
     skillsPreview: "HTML, CSS, JS, TypeScript, Tailwind, VS Code, GitHub...",
     projectsPreview: "探索我最新的网络相关项目和应用程序。",
     contactPreview: "合作或咨询",
-    
+
     // About page
     aboutTitle: "关于我",
-    aboutIntroExtended: "你好！我是Christine，一名热衷于通过代码创造和创新解决方案的开发者。",
+    aboutIntroExtended:
+      "你好！我是Christine，一名热衷于通过代码创造和创新解决方案的开发者。",
     hobbies: "爱好与兴趣",
     hobbyList: {
       drawing: "绘画",
       traveling: "旅行",
       puzzles: "益智游戏",
       listeningMusic: "听音乐",
-      playingGames: "玩游戏"
+      playingGames: "玩游戏",
     },
-    aboutInternship: "作为ECOLE 42的学生，我对网络开发和现代技术充满热情。我认真、好奇且积极主动，为项目做出有效贡献。",
+    aboutInternship:
+      "作为ECOLE 42的学生，我对网络开发和现代技术充满热情。我认真、好奇且积极主动，为项目做出有效贡献。",
     personalQualities: "优点",
     qualities: {
       adaptability: "适应力强",
@@ -231,7 +251,7 @@ const translations = {
       autonomousLearning: "自主学习",
       flexibility: "灵活",
       creativity: "创造力",
-      openMinded: "开放思维"
+      openMinded: "开放思维",
     },
     qualityDetails: {
       adaptability: "快速适应新环境和技术",
@@ -239,18 +259,18 @@ const translations = {
       autonomousLearning: "自主学习和持续进步",
       flexibility: "能够顺利处理需求变化",
       creativity: "创新解决问题和原创思维",
-      openMinded: "接受新想法和多元化观点"
+      openMinded: "接受新想法和多元化观点",
     },
-    
+
     // Skills page
     skillsCategories: {
       languages: "编程语言",
       frameworks: "框架和库",
       environments: "环境和系统",
       editors: "编辑器和IDE和版本控制",
-      utilities: "实用工具"
+      utilities: "实用工具",
     },
-    
+
     // Projects page
     viewDetails: "查看详情",
     projectDescriptions: {
@@ -268,15 +288,16 @@ const translations = {
       cppModules: "C++面向对象编程入门。",
       inception: "使用Docker和网络服务的虚拟化项目。",
       ftIrc: "与标准IRC客户端兼容的C++ IRC服务器。",
-      ftTranscendence: "完整的网络应用程序 - 实时多人玩家Pong游戏。"
+      ftTranscendence: "完整的网络应用程序 - 实时多人玩家Pong游戏。",
+      camagru: "简单的社会媒体网络应用程序，具有照片分享和滤镜功能。",
     },
-    
+
     // Contact page
     showEmail: "显示我的邮箱",
     hideEmail: "隐藏邮箱",
     viewGithub: "查看我的GitHub",
     viewLinkedin: "查看我的LinkedIn",
-    
+
     // Footer
     footerTitle: "42项目作品集",
     footerDescription: "展示42学校的技术专长和项目。",
@@ -285,26 +306,26 @@ const translations = {
     github: "GitHub",
     mail: "邮件",
     linkedin: "LinkedIn",
-    copyright: "© 2025 我的作品集。保留所有权利。"
-  }
+    copyright: "© 2025 我的作品集。保留所有权利。",
+  },
 };
 
 // Current language (default to English)
-let currentLanguage = 'en';
+let currentLanguage = "en";
 
 // Function to get a translation
 function t(key) {
-  const keys = key.split('.');
+  const keys = key.split(".");
   let value = translations[currentLanguage];
-  
+
   for (const k of keys) {
-    if (value && typeof value === 'object') {
+    if (value && typeof value === "object") {
       value = value[k];
     } else {
       return key;
     }
   }
-  
+
   return value || key;
 }
 
@@ -312,7 +333,7 @@ function t(key) {
 function changeLanguage(lang) {
   if (translations[lang]) {
     currentLanguage = lang;
-    localStorage.setItem('preferredLanguage', lang);
+    localStorage.setItem("preferredLanguage", lang);
     updateAllTexts();
   }
 }
@@ -326,51 +347,51 @@ function updateAllTexts() {
 // Functions to update each section
 function updateNavigation() {
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href').substring(1);
-    if (href === 'home') link.textContent = t('home');
-    else if (href === 'about') link.textContent = t('about');
-    else if (href === 'projects') link.textContent = t('projects');
-    else if (href === 'skills') link.textContent = t('skills');
-    else if (href === 'contact') link.textContent = t('contact');
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href").substring(1);
+    if (href === "home") link.textContent = t("home");
+    else if (href === "about") link.textContent = t("about");
+    else if (href === "projects") link.textContent = t("projects");
+    else if (href === "skills") link.textContent = t("skills");
+    else if (href === "contact") link.textContent = t("contact");
   });
 }
 
 // Update Home Section Reviews
 function updateFooter() {
-  const footer = document.querySelector('footer');
+  const footer = document.querySelector("footer");
   if (footer) {
     footer.innerHTML = `
       <div class="flex justify-between">
         <div>
-          <p>${t('footerTitle')}</p>
-          <p>${t('footerDescription')}</p>
+          <p>${t("footerTitle")}</p>
+          <p>${t("footerDescription")}</p>
         </div>
         <div class="flex flex-row gap-6">
           <nav class="flex flex-col">
-            <a class="text-xl font-bold">${t('navigate')}</a>
-            <a href="#home" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('home')}</a>
-            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('about')}</a>
-            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('projects')}</a>
-            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('skills')}</a>
-            <a href="#contact" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('contact')}</a>
+            <a class="text-xl font-bold">${t("navigate")}</a>
+            <a href="#home" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("home")}</a>
+            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("about")}</a>
+            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("projects")}</a>
+            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("skills")}</a>
+            <a href="#contact" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("contact")}</a>
           </nav>
           <nav class="flex flex-col">
-            <a class="text-xl font-bold">${t('connect')}</a>
-            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('github')}</a>
-            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('mail')}</a>
-            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t('linkedin')}</a>
+            <a class="text-xl font-bold">${t("connect")}</a>
+            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("github")}</a>
+            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("mail")}</a>
+            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("linkedin")}</a>
           </nav>
         </div>
       </div>
-      <p class="mt-8">${t('copyright')}</p>
+      <p class="mt-8">${t("copyright")}</p>
     `;
   }
 }
 
 // Initialiser la langue au chargement
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLanguage = localStorage.getItem('preferredLanguage');
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLanguage = localStorage.getItem("preferredLanguage");
   if (savedLanguage && translations[savedLanguage]) {
     currentLanguage = savedLanguage;
   }

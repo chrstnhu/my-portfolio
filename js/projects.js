@@ -204,6 +204,12 @@ const projectsData = [
         descriptionKey: 'projectDescriptions.ftTranscendence',
         img: 'assets/projects/ft_transcendence.png',
         link: 'https://github.com/chrstnhu/ft_transcendence'
+      },
+      {
+        title: 'camagru',
+        descriptionKey: 'projectDescriptions.camagru',
+        img: 'assets/projects/camagru.png',
+        link: 'https://github.com/chrstnhu/camagru'
       }
     ];
 
