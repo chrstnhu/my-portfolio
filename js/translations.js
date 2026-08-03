@@ -83,6 +83,10 @@ const translations = {
         "Complete web application - real-time multiplayers Pong game.",
       camagru:
         "A simple social media web application with photo sharing and filters.",
+      matcha:
+        "A dating web application with user profiles, messaging, matching features and chat.",
+      timetools:
+        "A time management web application with task tracking, scheduling, and productivity features.",
     },
 
     // Contact page
@@ -190,6 +194,10 @@ const translations = {
         "Application web complète - jeu Pong multijoueurs en temps réel.",
       camagru:
         "Une application web simple de médias sociaux avec partage de photos et filtres.",
+      matcha:
+        "Une application web de rencontres avec profils utilisateurs, messagerie, fonctionnalités de mise en relation et chat.",
+      timetools:
+        "Une application web de gestion du temps avec suivi des tâches, planification et fonctionnalités de productivité.",
     },
 
     // Contact page
@@ -290,6 +298,8 @@ const translations = {
       ftIrc: "与标准IRC客户端兼容的C++ IRC服务器。",
       ftTranscendence: "完整的网络应用程序 - 实时多人玩家Pong游戏。",
       camagru: "简单的社会媒体网络应用程序，具有照片分享和滤镜功能。",
+      matcha: "一个约会网络应用程序，具有用户资料、消息传递、匹配功能和聊天。",
+      timetools: "一个时间管理网络应用程序，具有任务跟踪、计划和生产力功能。",
     },
 
     // Contact page
