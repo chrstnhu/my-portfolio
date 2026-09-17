@@ -1,5 +1,4 @@
-// Translations dictionary
-const translations = {
+export const translations = {
   en: {
     // Navigation
     home: "Home",
@@ -80,7 +79,7 @@ const translations = {
       inception: "Virtualization project with Docker and web services.",
       ftIrc: "IRC server in C++ compatible with standard IRC clients.",
       ftTranscendence:
-        "Complete web application - real-time multiplayers Pong game.",
+        "Complete web application - real-time multiplayer Pong game.",
       camagru:
         "A simple social media web application with photo sharing and filters.",
       matcha:
@@ -319,90 +318,3 @@ const translations = {
     copyright: "© 2025 我的作品集。保留所有权利。",
   },
 };
-
-// Current language (default to English)
-let currentLanguage = "en";
-
-// Function to get a translation
-function t(key) {
-  const keys = key.split(".");
-  let value = translations[currentLanguage];
-
-  for (const k of keys) {
-    if (value && typeof value === "object") {
-      value = value[k];
-    } else {
-      return key;
-    }
-  }
-
-  return value || key;
-}
-
-// Function to change the language
-function changeLanguage(lang) {
-  if (translations[lang]) {
-    currentLanguage = lang;
-    localStorage.setItem("preferredLanguage", lang);
-    updateAllTexts();
-  }
-}
-
-// Function to update all texts
-function updateAllTexts() {
-  updateNavigation();
-  updateFooter();
-}
-
-// Functions to update each section
-function updateNavigation() {
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-  navLinks.forEach((link) => {
-    const href = link.getAttribute("href").substring(1);
-    if (href === "home") link.textContent = t("home");
-    else if (href === "about") link.textContent = t("about");
-    else if (href === "projects") link.textContent = t("projects");
-    else if (href === "skills") link.textContent = t("skills");
-    else if (href === "contact") link.textContent = t("contact");
-  });
-}
-
-// Update Home Section Reviews
-function updateFooter() {
-  const footer = document.querySelector("footer");
-  if (footer) {
-    footer.innerHTML = `
-      <div class="flex justify-between">
-        <div>
-          <p>${t("footerTitle")}</p>
-          <p>${t("footerDescription")}</p>
-        </div>
-        <div class="flex flex-row gap-6">
-          <nav class="flex flex-col">
-            <a class="text-xl font-bold">${t("navigate")}</a>
-            <a href="#home" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("home")}</a>
-            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("about")}</a>
-            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("projects")}</a>
-            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("skills")}</a>
-            <a href="#contact" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("contact")}</a>
-          </nav>
-          <nav class="flex flex-col">
-            <a class="text-xl font-bold">${t("connect")}</a>
-            <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("github")}</a>
-            <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("mail")}</a>
-            <a href="#skills" class="text-white hover:text-gray-300 transition-colors duration-200 no-underline">${t("linkedin")}</a>
-          </nav>
-        </div>
-      </div>
-      <p class="mt-8">${t("copyright")}</p>
-    `;
-  }
-}
-
-// Initialiser la langue au chargement
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLanguage = localStorage.getItem("preferredLanguage");
-  if (savedLanguage && translations[savedLanguage]) {
-    currentLanguage = savedLanguage;
-  }
-});
