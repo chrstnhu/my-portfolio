@@ -18,6 +18,7 @@ function App() {
       const page = window.location.hash.replace("#", "") || "home";
 
       setCurrentPage(page);
+
       window.scrollTo({
         top: 0,
         behavior: "smooth",
@@ -54,13 +55,13 @@ function App() {
   }
 
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <Header />
 
-      <main>{renderPage()}</main>
+      <main className="flex-1">{renderPage()}</main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
