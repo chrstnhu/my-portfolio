@@ -3,6 +3,13 @@ import { useLanguage } from "../context/LanguageContext";
 function Header() {
   const { language, changeLanguage, t } = useLanguage();
 
+  const navigation = [
+    ["about", "about"],
+    ["projects", "projects"],
+    ["skills", "skills"],
+    ["contact", "contact"],
+  ];
+
   function handleLanguageChange(event) {
     changeLanguage(event.target.value);
   }
@@ -15,124 +22,102 @@ function Header() {
         left-0
         top-0
         z-50
-        flex
         w-full
-        justify-between
-        bg-gray-800/70
-        p-4
-        text-white
-        backdrop-blur-lg
+        bg-gray-200/60
+        text-slate-800
+        shadow-sm
+        backdrop-blur-md
       "
     >
-      <a
-        href="#home"
-        id="logo-link"
-        className="
-          cursor-pointer
-          text-white
-          no-underline
-          transition-colors
-          duration-200
-          hover:text-gray-300
-        "
-      >
-        My Portfolio
-      </a>
-
-      <nav className="flex items-center space-x-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        {/* Logo */}
         <a
           href="#home"
+          id="logo-link"
           className="
-            text-white
-            no-underline
-            transition-colors
-            duration-200
-            hover:text-gray-300
-          "
+    font-semibold
+    text-slate-900
+    no-underline
+    transition-all
+    duration-200
+    hover:-translate-y-px
+    hover:text-blue-600
+  "
         >
-          {t("home")}
+          Christine HU
         </a>
 
-        <a
-          href="#about"
-          className="
-            text-white
-            no-underline
-            transition-colors
-            duration-200
-            hover:text-gray-300
-          "
-        >
-          {t("about")}
-        </a>
+        {/* Navigation */}
+        <nav className="flex items-center gap-5 sm:gap-7">
+          {navigation.map(([key, labelKey]) => (
+            <a
+              key={key}
+              href={`#${key}`}
+              className="
+    group
+    relative
+    hidden
+    text-sm
+    font-medium
+    text-slate-700
+    no-underline
+    transition-colors
+    duration-200
+    hover:text-blue-600
+    sm:block
+  "
+            >
+              {t(labelKey)}
 
-        <a
-          href="#projects"
-          className="
-            text-white
-            no-underline
-            transition-colors
-            duration-200
-            hover:text-gray-300
-          "
-        >
-          {t("projects")}
-        </a>
+              <span
+                aria-hidden="true"
+                className="
+      absolute
+      -bottom-1
+      left-0
+      h-px
+      w-0
+      bg-blue-600
+      transition-all
+      duration-200
+      group-hover:w-full
+    "
+              />
+            </a>
+          ))}
 
-        <a
-          href="#skills"
-          className="
-            text-white
-            no-underline
-            transition-colors
-            duration-200
-            hover:text-gray-300
-          "
-        >
-          {t("skills")}
-        </a>
-
-        <a
-          href="#contact"
-          className="
-            text-white
-            no-underline
-            transition-colors
-            duration-200
-            hover:text-gray-300
-          "
-        >
-          {t("contact")}
-        </a>
-
-        <div className="relative ml-4">
+          {/* Language */}
           <select
             id="language-selector"
             value={language}
             onChange={handleLanguageChange}
+            aria-label="Select language"
             className="
-              rounded
-              border
-              border-gray-600
-              bg-gray-700
-              px-3
-              py-1
-              text-sm
-              text-white
-              transition-colors
-              duration-200
-              hover:bg-gray-600
-              focus:ring-2
-              focus:ring-blue-500
-              focus:outline-none
-            "
+  rounded-md
+  border
+  border-slate-300/70
+  bg-slate-200/50
+  px-2
+  py-1
+  text-sm
+  text-slate-700
+  outline-none
+  backdrop-blur-sm
+  transition-all
+  duration-200
+  hover:border-blue-300
+  hover:bg-slate-200/70
+  focus:border-blue-500
+  focus:ring-1
+  focus:ring-blue-500
+"
           >
             <option value="en">🇺🇸 EN</option>
             <option value="fr">🇫🇷 FR</option>
             <option value="zh">🇨🇳 中文</option>
           </select>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }
