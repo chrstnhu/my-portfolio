@@ -1,7 +1,6 @@
 export const translations = {
   en: {
     // Navigation
-    home: "Home",
     about: "About",
     projects: "Projects",
     skills: "Skills",
@@ -52,6 +51,9 @@ export const translations = {
     },
 
     // Skills page
+    skillsTitle: "Skills",
+    skillsIntro:
+      "I have acquired skills through my experiences and projects. Here are some of them",
     skillsCategories: {
       languages: "Languages",
       frameworks: "Frameworks & Libraries",
@@ -61,6 +63,9 @@ export const translations = {
     },
 
     // Projects page
+    projectsTitle: "Projects",
+    projectsIntro:
+      "Here are some of my recent projects, showcasing my skills and expertise in web development and modern technologies.",
     viewDetails: "View Details",
     projectDescriptions: {
       libft: "My first C library - recreation of libc functions.",
@@ -89,6 +94,9 @@ export const translations = {
     },
 
     // Contact page
+    contactTitle: "Contact",
+    contactIntro:
+      "Feel free to reach out for any collaboration, question, or opportunity. I am always open to new ideas and exciting projects.",
     showEmail: "Show my email",
     hideEmail: "Hide email",
     viewGithub: "View my GitHub",
@@ -108,7 +116,6 @@ export const translations = {
 
   fr: {
     // Navigation
-    home: "Accueil",
     about: "À propos",
     projects: "Projets",
     skills: "Compétences",
@@ -161,6 +168,9 @@ export const translations = {
     },
 
     // Skills page
+    skillsTitle: "Compétences",
+    skillsIntro:
+      "Voici quelques-unes de mes compétences, acquises au fil de mes expériences et projets.",
     skillsCategories: {
       languages: "Langages",
       frameworks: "Frameworks et Bibliothèques",
@@ -170,6 +180,42 @@ export const translations = {
     },
 
     // Projects page
+    projectsTitle: "Projets",
+    projectsIntro:
+      "Voici mes projets récents, mettant en valeur mes compétences et mon expertise dans le développement web et les technologies modernes.",
+    viewDetails: "Voir les détails",
+    projectDescriptions: {
+      libft: "Ma première bibliothèque C - recréation des fonctions libc.",
+      getNextLine:
+        "Fonction qui lit ligne par ligne depuis un descripteur de fichier.",
+      ftPrintf: "Recréation de la fonction printf de libc.",
+      born2beroot: "Projet d'administration système avec machine virtuelle.",
+      pushSwap:
+        "Algorithme de tri avec deux piles et un ensemble d'instructions.",
+      soLong: "Petit jeu 2D développé avec minilibx.",
+      pipex: "Recréation du mécanisme de pipe shell avec redirection.",
+      philosophers:
+        "Simulation du problème des philosophes avec threads et mutex.",
+      minishell: "Recréation d'un shell basique comme bash.",
+      netPractice: "Exercices pratiques de configuration réseau et TCP/IP.",
+      cub3d: "Moteur de jeu 3D inspiré de Wolfenstein 3D avec raycasting.",
+      cppModules: "Introduction à la programmation orientée objet en C++.",
+      inception: "Projet de virtualisation avec Docker et services web.",
+      ftIrc: "Serveur IRC en C++ compatible avec les clients IRC standard.",
+      ftTranscendence:
+        "Application web complète - jeu Pong multijoueurs en temps réel.",
+      camagru:
+        "Une application web simple de médias sociaux avec partage de photos et filtres.",
+      matcha:
+        "Une application web de rencontres avec profils utilisateurs, messagerie, fonctionnalités de mise en relation et chat.",
+      timetools:
+        "Une application web de gestion du temps avec suivi des tâches, planification et fonctionnalités de productivité.",
+    },
+
+    // Projects page
+    projectsTitle: "Projets",
+    projectsIntro:
+      "Voici mes projets récents, mettant en valeur mes compétences et mon expertise dans le développement web et les technologies modernes.",
     viewDetails: "Voir les détails",
     projectDescriptions: {
       libft: "Ma première bibliothèque C - recréation des fonctions libc.",
@@ -200,6 +246,9 @@ export const translations = {
     },
 
     // Contact page
+    contactTitle: "Contact",
+    contactIntro:
+      "N'hésitez pas à me contacter pour toute collaboration, question ou opportunité. Je suis toujours ouverte à de nouvelles idées et projets passionnants.",
     showEmail: "Afficher mon email",
     hideEmail: "Masquer l'email",
     viewGithub: "Voir mon GitHub",
@@ -219,7 +268,6 @@ export const translations = {
 
   zh: {
     // Navigation
-    home: "首页",
     about: "关于",
     projects: "项目",
     skills: "技能",
@@ -268,8 +316,10 @@ export const translations = {
       creativity: "创新解决问题和原创思维",
       openMinded: "接受新想法和多元化观点",
     },
-
     // Skills page
+    skillsTitle: "技能",
+    skillsIntro:
+      "我通过经验和项目获得了多样化的技能。以下是我擅长的一些关键领域。",
     skillsCategories: {
       languages: "编程语言",
       frameworks: "框架和库",
@@ -279,6 +329,9 @@ export const translations = {
     },
 
     // Projects page
+    projectsTitle: "项目",
+    projectsIntro:
+      "以下是我最近的项目，展示了我在网络开发和现代技术方面的技能和专业知识。",
     viewDetails: "查看详情",
     projectDescriptions: {
       libft: "我的第一个C库 - 重建libc函数。",
@@ -302,6 +355,9 @@ export const translations = {
     },
 
     // Contact page
+    contactTitle: "联系",
+    contactIntro:
+      "欢迎随时与我联系，进行合作、咨询或机会。我始终对新的想法和令人兴奋的项目持开放态度。",
     showEmail: "显示我的邮箱",
     hideEmail: "隐藏邮箱",
     viewGithub: "查看我的GitHub",
