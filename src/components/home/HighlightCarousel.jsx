@@ -72,6 +72,7 @@ function HighlightCarousel() {
         />
       ))}
 
+      {/* Carousel indicators */}
       <div className="absolute -bottom-8 left-1/2 z-40 flex -translate-x-1/2 gap-2">
         {highlights.map((highlight, index) => (
           <button
@@ -81,8 +82,8 @@ function HighlightCarousel() {
             aria-label={`Show ${highlight.title}`}
             className={`h-2 rounded-full transition-all duration-300 ${
               activeIndex === index
-                ? "w-6 bg-blue-500"
-                : "w-2 bg-slate-300 hover:bg-slate-400"
+                ? "w-6 bg-blue-500 dark:bg-blue-400"
+                : "w-2 bg-slate-300 hover:bg-slate-400 dark:bg-slate-600 dark:hover:bg-slate-500"
             }`}
           />
         ))}
