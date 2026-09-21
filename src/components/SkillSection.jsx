@@ -4,42 +4,43 @@ function SkillSection({ title, skills }) {
   const sortedSkills = [...skills].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <section
-      className="
-        mb-12
-        rounded-2xl
-        border
-        border-slate-200
-        bg-slate-50/80
-        p-6
-        shadow-lg
-        backdrop-blur-sm
-        transition-all
-        duration-300
-        hover:shadow-xl
-      "
-    >
-      <h2
-        className="
-          mb-6
-          text-2xl
-          font-bold
-          tracking-tight
-          text-slate-800
-        "
-      >
-        {title}
-      </h2>
+    <section className="mb-12">
+      {/* Section title */}
+      <div className="mb-6 flex items-center gap-4">
+        <div
+          className="
+            h-8
+            w-1
+            rounded-full
+            bg-blue-600
+            dark:bg-blue-500
+          "
+        />
 
-      <div
-        className="
-          flex
-          flex-wrap
-          justify-center
-          gap-4
-          md:justify-start
-        "
-      >
+        <h2
+          className="
+            text-2xl
+            font-semibold
+            tracking-tight
+            text-slate-900
+            dark:text-slate-100
+          "
+        >
+          {title}
+        </h2>
+
+        <div
+          className="
+            h-px
+            flex-1
+            bg-slate-200
+            dark:bg-slate-700
+          "
+        />
+      </div>
+
+      {/* Skills */}
+      <div className="flex flex-wrap gap-3">
         {sortedSkills.map((skill) => (
           <SkillCard key={skill.name} skill={skill} />
         ))}
