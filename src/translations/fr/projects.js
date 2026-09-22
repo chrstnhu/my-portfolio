@@ -6,63 +6,71 @@ export default {
 
   viewDetails: "Voir le projet",
 
-  close: "Fermer",
+  projectsFound: "projets trouvés",
 
-  technologies: "Technologies",
+  noProjectsFound: "Aucun projet ne correspond à ce filtre.",
 
-  skillsUsedTitle: "Compétences utilisées",
+  filters: {
+    all: "Tous",
+    c: "C",
+    cpp: "C++",
+    web: "Web",
+    react: "React",
+    backend: "Backend",
+    docker: "Docker",
+    networking: "Réseau",
+    systemAdministration: "Administration système",
+    graphics: "Graphisme",
+  },
 
   projectDescriptions: {
-    libft:
-      "Ma première bibliothèque C — recréation des fonctions standard de la libc.",
+    libft: "Ma première bibliothèque C - recréation des fonctions libc.",
 
     getNextLine:
-      "Fonction permettant de lire le contenu d'un descripteur de fichier ligne par ligne.",
+      "Fonction qui lit ligne par ligne depuis un descripteur de fichier.",
 
-    ftPrintf: "Recréation de la fonction printf de la libc.",
+    ftPrintf: "Recréation de la fonction printf de libc.",
 
-    born2beroot:
-      "Projet d'administration système réalisé à l'aide d'une machine virtuelle.",
+    born2beroot: "Projet d'administration système avec machine virtuelle.",
 
     pushSwap:
-      "Algorithme de tri utilisant deux piles et un ensemble d'instructions.",
+      "Algorithme de tri avec deux piles et un ensemble d'instructions.",
 
     soLong: "Petit jeu 2D développé avec MiniLibX.",
 
-    pipex:
-      "Recréation du mécanisme de pipe du Shell avec gestion des redirections.",
+    pipex: "Recréation du mécanisme de pipe shell avec redirection.",
 
     philosophers:
-      "Simulation du problème des philosophes avec des threads et des mutex.",
+      "Simulation du problème des philosophes avec threads et mutex.",
 
-    minishell: "Recréation d'un Shell basique inspiré de Bash.",
+    minishell: "Recréation d'un shell basique comme Bash.",
 
-    netPractice:
-      "Exercices pratiques de configuration réseau et de protocoles TCP/IP.",
+    netPractice: "Exercices pratiques de configuration réseau et TCP/IP.",
 
-    cub3d:
-      "Moteur de jeu 3D inspiré de Wolfenstein 3D utilisant le raycasting.",
+    cub3d: "Moteur de jeu 3D inspiré de Wolfenstein 3D avec raycasting.",
 
     cppModules: "Introduction à la programmation orientée objet en C++.",
 
-    inception:
-      "Projet de conteneurisation et de virtualisation utilisant Docker et des services web.",
+    inception: "Projet de virtualisation avec Docker et services web.",
 
-    ftIrc:
-      "Serveur IRC développé en C++, compatible avec les clients IRC standards.",
+    ftIrc: "Serveur IRC en C++ compatible avec les clients IRC standard.",
 
     ftTranscendence:
-      "Application web complète intégrant un jeu de Pong multijoueur en temps réel.",
+      "Application web complète - jeu Pong multijoueurs en temps réel.",
 
     camagru:
-      "Application web de type réseau social permettant le partage de photos et l'utilisation de filtres.",
+      "Une application web simple de médias sociaux avec partage de photos et filtres.",
 
     matcha:
-      "Application web de rencontre avec profils utilisateurs, messagerie, système de mise en relation et chat.",
+      "Une application web de rencontres avec profils utilisateurs, messagerie, fonctionnalités de mise en relation et chat.",
 
     timetools:
-      "Application web de gestion du temps avec suivi des tâches, planification et fonctionnalités de productivité.",
+      "Une application web de gestion du temps avec suivi des tâches, planification et fonctionnalités de productivité.",
   },
+
+  close: "Fermer",
+
+  technologies: "Technologies",
 
   skillsUsed: {
     memoryManagement: "Gestion de la mémoire",

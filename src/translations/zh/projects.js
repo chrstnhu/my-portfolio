@@ -6,6 +6,23 @@ export default {
 
   viewDetails: "查看项目",
 
+  projectsFound: "个项目",
+
+  noProjectsFound: "没有符合此筛选条件的项目。",
+
+  filters: {
+    all: "全部",
+    c: "C",
+    cpp: "C++",
+    web: "Web",
+    react: "React",
+    backend: "后端",
+    docker: "Docker",
+    networking: "网络",
+    systemAdministration: "系统管理",
+    graphics: "图形",
+  },
+
   projectDescriptions: {
     libft: "我的第一个 C 语言库——重新实现 libc 中的常用函数。",
 
