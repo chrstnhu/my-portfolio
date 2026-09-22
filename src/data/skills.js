@@ -1,5 +1,18 @@
 export const skillSections = [
   {
+    id: "technical",
+    titleKey: "skillsCategories.technical",
+    skills: [
+      { name: "API / REST", icon: "🔗" },
+      { name: "Responsive Web Design", icon: "📱" },
+      { name: "UI Integration", icon: "🎨" },
+      { name: "Problem Solving", icon: "🧩" },
+      { name: "Debugging", icon: "🐛" },
+      { name: "HTTP / JSON", icon: "🌐" },
+    ],
+  },
+  {
+    id: "languages",
     titleKey: "skillsCategories.languages",
     skills: [
       { name: "C", img: "/assets/skills/C.png" },
@@ -13,132 +26,65 @@ export const skillSections = [
   },
 
   {
+    id: "frameworks",
     titleKey: "skillsCategories.frameworks",
     skills: [
-      {
-        name: "React",
-        img: "/assets/skills/React.png",
-      },
-      {
-        name: "Tailwind CSS",
-        img: "/assets/skills/Tailwind CSS.png",
-      },
+      { name: "React", img: "/assets/skills/React.png" },
+      { name: "Tailwind CSS", img: "/assets/skills/Tailwind CSS.png" },
     ],
   },
 
   {
+    id: "backend",
     titleKey: "skillsCategories.backend",
     skills: [
-      {
-        name: "Node.js",
-        img: "/assets/skills/Node.js.png",
-      },
-      {
-        name: "Express",
-        img: "/assets/skills/Express.png",
-      },
+      { name: "Node.js", img: "/assets/skills/Node.js.png" },
+      { name: "Express", img: "/assets/skills/Express.png" },
     ],
   },
 
   {
+    id: "databases",
     titleKey: "skillsCategories.databases",
     skills: [
-      {
-        name: "SQL",
-        img: "/assets/skills/SQL.png",
-      },
-      {
-        name: "MySQL",
-        img: "/assets/skills/MySQL.png",
-      },
-      {
-        name: "PostgreSQL",
-        img: "/assets/skills/PostgreSQL.png",
-      },
+      { name: "SQL", img: "/assets/skills/SQL.png" },
+      { name: "MySQL", img: "/assets/skills/MySQL.png" },
+      { name: "PostgreSQL", img: "/assets/skills/PostgreSQL.png" },
     ],
   },
 
   {
-    titleKey: "skillsCategories.technical",
-    skills: [
-      {
-        name: "API / REST",
-        icon: "🔗",
-      },
-      {
-        name: "Responsive Web Design",
-        icon: "📱",
-      },
-      {
-        name: "UI Integration",
-        icon: "🎨",
-      },
-      {
-        name: "Problem Solving",
-        icon: "🧩",
-      },
-    ],
-  },
-
-  {
+    id: "environments",
     titleKey: "skillsCategories.environments",
     skills: [
-      {
-        name: "Linux",
-        img: "/assets/skills/Linux.png",
-      },
-      {
-        name: "Docker",
-        img: "/assets/skills/Docker.png",
-      },
-      {
-        name: "VirtualBox",
-        img: "/assets/skills/VirtualBox.png",
-      },
+      { name: "Linux", img: "/assets/skills/Linux.png" },
+      { name: "Docker", img: "/assets/skills/Docker.png" },
+      { name: "VirtualBox", img: "/assets/skills/VirtualBox.png" },
     ],
   },
 
   {
+    id: "tools",
     titleKey: "skillsCategories.tools",
     skills: [
-      {
-        name: "Git",
-        img: "/assets/skills/Git.png",
-      },
-      {
-        name: "GitHub",
-        img: "/assets/skills/GitHub.png",
-      },
+      { name: "Git", img: "/assets/skills/Git.png" },
+      { name: "GitHub", img: "/assets/skills/GitHub.png" },
       {
         name: "VS Code",
         img: "/assets/skills/Visual Studio Code (VS Code).png",
       },
-      {
-        name: "Notion",
-        img: "/assets/skills/Notion.png",
-      },
+      { name: "Notion", img: "/assets/skills/Notion.png" },
     ],
   },
 
   {
+    id: "utilities",
     titleKey: "skillsCategories.utilities",
     skills: [
-      {
-        name: "GIMP",
-        img: "/assets/skills/GIMP.png",
-      },
-      {
-        name: "Audacity",
-        img: "/assets/skills/Audacity.png",
-      },
-      {
-        name: "Aegisub",
-        img: "/assets/skills/Aegisub.png",
-      },
-      {
-        name: "Microsoft Office",
-        img: "/assets/skills/Packoffice.png",
-      },
+      { name: "GIMP", img: "/assets/skills/GIMP.png" },
+      { name: "Audacity", img: "/assets/skills/Audacity.png" },
+      { name: "Aegisub", img: "/assets/skills/Aegisub.png" },
+      { name: "Microsoft Office", img: "/assets/skills/Packoffice.png" },
     ],
   },
 ];

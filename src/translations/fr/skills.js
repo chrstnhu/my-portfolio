@@ -14,4 +14,6 @@ export default {
     tools: "Outils et Workflow",
     utilities: "Utilitaires",
   },
+
+  skillsUsedTitle: "Compétences utilisées dans les projets",
 };

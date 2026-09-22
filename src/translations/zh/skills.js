@@ -13,4 +13,6 @@ export default {
     tools: "工具和工作流程",
     utilities: "实用工具",
   },
+
+  skillsUsedTitle: "在项目中使用的技能",
 };

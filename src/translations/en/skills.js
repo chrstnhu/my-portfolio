@@ -14,4 +14,6 @@ export default {
     tools: "Tools & Workflow",
     utilities: "Utilities",
   },
+
+  skillsUsedTitle: "Skills used in projects",
 };

@@ -1,10 +1,12 @@
 import SkillCard from "./SkillCard";
 
 function SkillSection({ title, skills }) {
-  const sortedSkills = [...skills].sort((a, b) => a.name.localeCompare(b.name));
+  const sortedSkills = [...skills].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
 
   return (
-    <section className="mb-12">
+    <section>
       {/* Section title */}
       <div className="mb-6 flex items-center gap-4">
         <div
