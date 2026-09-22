@@ -1,30 +1,42 @@
 import { useLanguage } from "../context/LanguageContext";
+import HobbyIcon from "../components/HobbyIcon";
+import QualityIcon from "../components/QualityIcon";
 
 const hobbies = [
   {
     emoji: "🎨",
     key: "hobbyList.drawing",
-    color: "from-red-50 to-red-100 border-red-200",
+    color:
+      "bg-pink-50 text-pink-600 border-pink-100 dark:bg-pink-950/40 dark:text-pink-400 dark:border-pink-900",
+    rotation: "hover:-rotate-2",
   },
   {
     emoji: "✈️",
     key: "hobbyList.traveling",
-    color: "from-blue-50 to-blue-100 border-blue-200",
+    color:
+      "bg-blue-50 text-blue-600 border-blue-100 dark:bg-blue-950/40 dark:text-blue-400 dark:border-blue-900",
+    rotation: "hover:rotate-2",
   },
   {
     emoji: "🧩",
     key: "hobbyList.puzzles",
-    color: "from-purple-50 to-purple-100 border-purple-200",
+    color:
+      "bg-violet-50 text-violet-600 border-violet-100 dark:bg-violet-950/40 dark:text-violet-400 dark:border-violet-900",
+    rotation: "hover:-rotate-1",
   },
   {
     emoji: "🎵",
     key: "hobbyList.listeningMusic",
-    color: "from-green-50 to-green-100 border-green-200",
+    color:
+      "bg-amber-50 text-amber-600 border-amber-100 dark:bg-amber-950/40 dark:text-amber-400 dark:border-amber-900",
+    rotation: "hover:rotate-1",
   },
   {
     emoji: "🎮",
     key: "hobbyList.playingGames",
-    color: "from-orange-50 to-orange-100 border-orange-200",
+    color:
+      "bg-emerald-50 text-emerald-600 border-emerald-100 dark:bg-emerald-950/40 dark:text-emerald-400 dark:border-emerald-900",
+    rotation: "hover:-rotate-2",
   },
 ];
 
@@ -33,37 +45,37 @@ const qualities = [
     emoji: "🔄",
     qualityKey: "qualities.adaptability",
     detailKey: "qualityDetails.adaptability",
-    color: "from-blue-50 to-blue-100 border-blue-200",
+    color: "text-blue-600 dark:text-blue-400",
   },
   {
     emoji: "🤝",
     qualityKey: "qualities.collaboration",
     detailKey: "qualityDetails.collaboration",
-    color: "from-green-50 to-green-100 border-green-200",
+    color: "text-emerald-600 dark:text-emerald-400",
   },
   {
     emoji: "📚",
     qualityKey: "qualities.autonomousLearning",
     detailKey: "qualityDetails.autonomousLearning",
-    color: "from-purple-50 to-purple-100 border-purple-200",
+    color: "text-violet-600 dark:text-violet-400",
   },
   {
     emoji: "🔀",
     qualityKey: "qualities.flexibility",
     detailKey: "qualityDetails.flexibility",
-    color: "from-orange-50 to-orange-100 border-orange-200",
+    color: "text-amber-600 dark:text-amber-400",
   },
   {
     emoji: "💡",
     qualityKey: "qualities.creativity",
     detailKey: "qualityDetails.creativity",
-    color: "from-pink-50 to-pink-100 border-pink-200",
+    color: "text-pink-600 dark:text-pink-400",
   },
   {
     emoji: "🌟",
     qualityKey: "qualities.openMinded",
     detailKey: "qualityDetails.openMinded",
-    color: "from-teal-50 to-teal-100 border-teal-200",
+    color: "text-orange-600 dark:text-orange-400",
   },
 ];
 
@@ -71,39 +83,177 @@ function About() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="pt-16">
-      <div className="relative flex flex-col items-start rounded-xl bg-slate-50 p-8 shadow-xl">
-        {/* Title */}
-        <h1 className="mb-6 text-4xl font-bold text-gray-800">
-          {t("aboutTitle")}
-        </h1>
+    <section
+      id="about"
+      className="
+        bg-white
+        px-6
+        py-24
+        transition-colors
+        duration-300
+        dark:bg-slate-950
+      "
+    >
+      <div className="mx-auto max-w-6xl">
+        {/* =========================
+            TITLE
+        ========================== */}
+        <div className="mb-16 max-w-2xl">
+          <h1
+            className="
+              text-4xl
+              font-bold
+              tracking-tight
+              text-slate-900
+              transition-colors
+              duration-300
+              dark:text-white
+              sm:text-5xl
+            "
+          >
+            {t("aboutTitle")}
 
-        {/* Introduction */}
-        <div className="mb-6 rounded-r-lg border-l-4 border-blue-500 bg-blue-50 p-6">
-          <p className="mb-4 text-lg font-medium leading-relaxed text-blue-800">
-            {t("aboutIntroExtended")}
-          </p>
+            <span
+              className="
+                ml-2
+                inline-block
+                text-blue-500
+                dark:text-blue-400
+                animate-[wiggle_2s_ease-in-out_infinite]
+              "
+              aria-hidden="true"
+            >
+              ✦
+            </span>
+          </h1>
 
-          <p className="text-lg font-medium leading-relaxed text-blue-800">
-            {t("aboutInternship")}
-          </p>
+          <div className="mt-5 h-1 w-12 rounded-full bg-blue-600 dark:bg-blue-500" />
         </div>
 
-        {/* Hobbies */}
-        <div className="mb-6 w-full rounded-lg bg-white p-6 shadow-md">
-          <h2 className="mb-4 text-xl font-semibold text-gray-800">
-            {t("hobbies")}
-          </h2>
+        {/* =========================
+            INTRODUCTION
+        ========================== */}
+        <div className="mb-20">
+          <div
+            className="
+              relative
+              max-w-3xl
+              border-l-2
+              border-blue-100
+              pl-6
+              transition-colors
+              duration-300
+              dark:border-blue-900
+              sm:pl-8
+            "
+          >
+            <p
+              className="
+                mb-5
+                text-lg
+                leading-relaxed
+                text-slate-700
+                transition-colors
+                duration-300
+                dark:text-slate-200
+                sm:text-xl
+              "
+            >
+              {t("aboutIntroExtended")}
+            </p>
 
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
+            <p
+              className="
+                text-base
+                leading-relaxed
+                text-slate-500
+                transition-colors
+                duration-300
+                dark:text-slate-400
+              "
+            >
+              {t("aboutInternship")}
+            </p>
+          </div>
+        </div>
+
+        {/* =========================
+            HOBBIES
+        ========================== */}
+        <div className="mb-20">
+          <div className="mb-8 flex items-center gap-4">
+            <h2
+              className="
+                text-2xl
+                font-semibold
+                tracking-tight
+                text-slate-900
+                transition-colors
+                duration-300
+                dark:text-white
+              "
+            >
+              {t("hobbies")}
+            </h2>
+
+            <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {hobbies.map((hobby) => (
               <div
                 key={hobby.key}
-                className={`flex flex-col items-center rounded-lg border bg-gradient-to-br p-3 ${hobby.color} transition-shadow duration-200 hover:shadow-sm`}
+                className={`
+                  group
+                  rounded-2xl
+                  border
+                  border-slate-200
+                  bg-white
+                  p-5
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-slate-300
+                  hover:shadow-lg
+                  dark:border-slate-800
+                  dark:bg-slate-900
+                  dark:hover:border-slate-700
+                  dark:hover:shadow-black/30
+                  ${hobby.rotation}
+                `}
               >
-                <div className="mb-1 text-xl">{hobby.emoji}</div>
+                {/* Emoji */}
+                <div
+                  className={`
+                    mb-4
+                    flex
+                    h-11
+                    w-11
+                    items-center
+                    justify-center
+                    rounded-xl
+                    border
+                    text-lg
+                    transition-transform
+                    duration-300
+                    group-hover:scale-110
+                    ${hobby.color}
+                  `}
+                >
+                  <HobbyIcon hobby={hobby} />
+                </div>
 
-                <span className="text-center text-xs font-medium">
+                {/* Name */}
+                <span
+                  className="
+                    text-sm
+                    font-medium
+                    text-slate-700
+                    transition-colors
+                    duration-300
+                    dark:text-slate-200
+                  "
+                >
                   {t(hobby.key)}
                 </span>
               </div>
@@ -111,27 +261,115 @@ function About() {
           </div>
         </div>
 
-        {/* Personal qualities */}
-        <div className="mb-6 w-full rounded-lg bg-white p-6 shadow-md">
-          <h2 className="mb-4 text-xl font-semibold text-gray-800">
-            {t("personalQualities")}
-          </h2>
+        {/* =========================
+            PERSONAL QUALITIES
+        ========================== */}
+        <div>
+          <div className="mb-8 flex items-center gap-4">
+            <h2
+              className="
+                text-2xl
+                font-semibold
+                tracking-tight
+                text-slate-900
+                transition-colors
+                duration-300
+                dark:text-white
+              "
+            >
+              {t("personalQualities")}
+            </h2>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {qualities.map((quality) => (
+            <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+          </div>
+
+          <div
+            className="
+              overflow-hidden
+              rounded-2xl
+              border
+              border-slate-200
+              bg-white
+              transition-colors
+              duration-300
+              dark:border-slate-800
+              dark:bg-slate-900
+            "
+          >
+            {qualities.map((quality, index) => (
               <div
                 key={quality.qualityKey}
-                className={`group flex h-32 cursor-pointer flex-col justify-between rounded-lg border bg-gradient-to-br p-4 text-center transition-all duration-200 hover:shadow-md ${quality.color}`}
+                className="
+                  group
+                  grid
+                  grid-cols-[40px_1fr]
+                  gap-4
+                  border-b
+                  border-slate-100
+                  p-5
+                  transition-all
+                  duration-300
+                  last:border-b-0
+                  hover:bg-slate-50
+                  hover:pl-6
+                  dark:border-slate-800
+                  dark:hover:bg-slate-800/60
+                  sm:grid-cols-[50px_220px_1fr]
+                  sm:items-center
+                "
               >
-                <div className="mb-1 text-2xl">{quality.emoji}</div>
+                {/* =========================
+                    NUMBER
+                ========================== */}
+                <span
+                  className="
+                    text-xs
+                    font-semibold
+                    text-slate-300
+                    transition-colors
+                    duration-200
+                    group-hover:text-slate-400
+                    dark:text-slate-600
+                    dark:group-hover:text-slate-500
+                  "
+                >
+                  0{index + 1}
+                </span>
 
-                <div className="mb-1 text-sm font-medium">
-                  {t(quality.qualityKey)}
+                {/* =========================
+                    QUALITY
+                ========================== */}
+                <div className="flex items-center gap-3">
+                  <QualityIcon quality={quality} />
+
+                  <span
+                    className={`
+                      text-sm
+                      font-semibold
+                      ${quality.color}
+                    `}
+                  >
+                    {t(quality.qualityKey)}
+                  </span>
                 </div>
 
-                <div className="flex h-8 items-center justify-center text-center text-xs leading-tight opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                {/* =========================
+                    DESCRIPTION
+                ========================== */}
+                <p
+                  className="
+                    col-start-2
+                    text-sm
+                    leading-relaxed
+                    text-slate-500
+                    transition-colors
+                    duration-300
+                    dark:text-slate-400
+                    sm:col-start-auto
+                  "
+                >
                   {t(quality.detailKey)}
-                </div>
+                </p>
               </div>
             ))}
           </div>
