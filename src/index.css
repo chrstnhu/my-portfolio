@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+/* =========================
+DARK MODE
+========================= */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================
+GLOBAL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #0f172a;
+    transition:
+        background-color 300ms ease,
+        color 300ms ease;
+}
+
+/* Dark mode global */
+html.dark body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+GENERAL ANIMATIONS
+========================= */
+
 @keyframes wiggle {
 
     0%,
@@ -10,10 +47,14 @@
     50% {
         transform: rotate(12deg);
     }
+
+
 }
 
+/* =========================
+🎵 MUSIC
+========================= */
 
-/* 🎵 Musique */
 @keyframes soundWave {
 
     0%,
@@ -24,11 +65,16 @@
     50% {
         transform: scaleY(1.5);
     }
+
+
 }
 
-/* 🎮 Course */
+/* =========================
+🎮 RACE
+========================= */
 
 @keyframes race {
+
     0% {
         transform: translateX(0);
     }
@@ -40,10 +86,16 @@
     100% {
         transform: translateX(0);
     }
+
+
 }
 
+/* =========================
+✈️ TRAVEL
+========================= */
 
 @keyframes followTravelPath {
+
     0% {
         transform: translate(2px, 43px) rotate(-65deg);
     }
@@ -75,10 +127,16 @@
     100% {
         transform: translate(103px, 18px) rotate(15deg);
     }
+
+
 }
 
+/* =========================
+🏎️ TOP RACE CAR
+========================= */
 
 @keyframes raceTop {
+
     0% {
         transform: translateX(0) scaleX(-1);
     }
@@ -98,9 +156,16 @@
     100% {
         transform: translateX(70px) scaleX(-1);
     }
+
+
 }
 
+/* =========================
+🏎️ BOTTOM RACE CAR
+========================= */
+
 @keyframes raceBottom {
+
     0% {
         transform: translateX(0) scaleX(-1);
     }
@@ -120,4 +185,6 @@
     100% {
         transform: translateX(87px) scaleX(-1);
     }
+
+
 }

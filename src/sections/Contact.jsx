@@ -5,21 +5,26 @@ function ContactCard({ children }) {
   return (
     <div
       className="
-        mb-8
         flex
         w-full
-        box-border
         flex-col
         items-start
         rounded-xl
-        bg-slate-50
-        p-8
-        shadow-xl
+        border
+        border-slate-200
+        bg-white
+        p-5
+        shadow-sm
         transition-all
-        duration-300
+        duration-200
         hover:-translate-y-1
-        hover:bg-slate-100
-        hover:shadow-2xl
+        hover:border-blue-200
+        hover:shadow-md
+
+        dark:border-slate-700
+        dark:bg-slate-800
+        dark:hover:border-blue-500
+        dark:hover:shadow-lg
       "
     >
       {children}
@@ -36,64 +41,66 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="pt-16">
+    <section
+      id="contact"
+      className="
+        mx-auto
+        flex
+        min-h-screen
+        max-w-6xl
+        flex-col
+        justify-center
+        gap-6
+        px-6
+        py-24
+        sm:gap-8
+      "
+    >
+      {/* Header */}
+      <div className="mb-16 max-w-2xl">
+        <h1
+          className="
+            text-4xl
+            font-bold
+            tracking-tight
+            text-slate-900
+            dark:text-white
+            sm:text-5xl
+          "
+        >
+          {t("contactTitle")}
+        </h1>
+
+        <div className="mt-5 h-1 w-12 rounded-full bg-blue-600" />
+
+        <p className="text-lg text-slate-600 dark:text-slate-400">
+          {t("contactIntro")}
+        </p>
+      </div>
+
+      {/* Contact cards */}
       <div
         className="
-          mb-8
-          mt-8
           grid
           grid-cols-1
-          gap-8
+          gap-5
           md:grid-cols-2
         "
       >
-        {/* Email */}
-        <ContactCard>
-          <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
-            <span aria-hidden="true">📧</span>
-            Email
-          </h2>
-
-          <button
-            type="button"
-            onClick={handleEmailToggle}
-            aria-label={
-              showEmail
-                ? "Hide my email address"
-                : "Show my email address"
-            }
-            className="
-              inline-block
-              rounded-lg
-              bg-blue-600
-              px-4
-              py-2
-              text-center
-              font-semibold
-              text-white
-              transition-colors
-              duration-200
-              hover:bg-blue-700
-            "
-          >
-            {showEmail ? t("hideEmail") : t("showEmail")}
-          </button>
-
-          {showEmail && (
-            <p className="mt-4">
-              <a
-                href="mailto:christinehu@live.be"
-                className="text-blue-600 underline hover:text-blue-800"
-              >
-                christinehu@live.be
-              </a>
-            </p>
-          )}
-        </ContactCard>
-
         {/* GitHub */}
         <ContactCard>
-          <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+          <h2
+            className="
+              mb-4
+              flex
+              items-center
+              gap-2
+              text-lg
+              font-semibold
+              text-slate-800
+              dark:text-slate-100
+            "
+          >
             <span aria-hidden="true">🐙</span>
             GitHub
           </h2>
@@ -104,19 +111,24 @@ function Contact() {
             rel="noopener noreferrer"
             aria-label="Check my profile"
             className="
-              inline-block
-              rounded-lg
-              bg-gray-800
+              rounded-md
+              bg-slate-800
               px-4
               py-2
+              text-sm
+              font-medium
               text-white
               no-underline
-              outline-none
               transition-colors
               duration-200
-              hover:bg-gray-700
+              hover:bg-slate-700
+              focus:outline-none
               focus:ring-2
-              focus:ring-blue-600
+              focus:ring-blue-500
+              focus:ring-offset-2
+              dark:bg-slate-700
+              dark:hover:bg-slate-600
+              dark:focus:ring-offset-slate-800
             "
           >
             {t("viewGithub")}
@@ -125,7 +137,18 @@ function Contact() {
 
         {/* LinkedIn */}
         <ContactCard>
-          <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+          <h2
+            className="
+              mb-4
+              flex
+              items-center
+              gap-2
+              text-lg
+              font-semibold
+              text-slate-800
+              dark:text-slate-100
+            "
+          >
             <span aria-hidden="true">💼</span>
             LinkedIn
           </h2>
@@ -136,19 +159,24 @@ function Contact() {
             rel="noopener noreferrer"
             aria-label="Check my LinkedIn profile"
             className="
-              inline-block
-              rounded-lg
-              bg-blue-700
+              rounded-md
+              bg-blue-600
               px-4
               py-2
+              text-sm
+              font-medium
               text-white
               no-underline
               transition-colors
               duration-200
-              hover:bg-blue-800
+              hover:bg-blue-700
               focus:outline-none
               focus:ring-2
-              focus:ring-blue-700
+              focus:ring-blue-500
+              focus:ring-offset-2
+              dark:bg-blue-500
+              dark:hover:bg-blue-600
+              dark:focus:ring-offset-slate-800
             "
           >
             {t("viewLinkedin")}
